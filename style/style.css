@@ -129,10 +129,7 @@ article {
     color: hsl(217, 12%, 63%);
 }
 
-#btn-submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#btnsubmit {
     max-width: 100%;
     height: 12%;
     margin-bottom: 1rem;
@@ -142,26 +139,22 @@ article {
     background-color: hsl(25, 97%, 53%);
 }
 
-#btn-submit a {
-    display: block;
+#btnsubmit a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     letter-spacing: 0.2rem;
 }
-
-/*.btn-submit:hover {
-    cursor: pointer;
-    background-color: hsl(0, 0%, 100%);
-} 
-
-.btn-submin:hover a {
-    color: hsl(25, 97%, 53%);
-}*/
-
+/*
 .numbers:hover {
     cursor: pointer;
     background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
-}
+}*/
 
