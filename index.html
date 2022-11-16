@@ -9,15 +9,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/style/style.css">
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
 </head>
 <body>
 
-  <!-- Rating state start -->
-
-  <section class="rating-card">
+  <section id="ratingcard">
     <div class="icon-star">
       <img src="/images/icon-star.svg" alt="">
     </div>
@@ -27,36 +22,35 @@
         <p> Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering! </p>
       </div>
-      <div class="number-of-raring">
-        <div class="numbers"> 1 </div>
-        <div class="numbers"> 2 </div>
-        <div class="numbers"> 3 </div>
-        <div class="numbers"> 4 </div>
-        <div class="numbers"> 5 </div>
-      </div>
-      <div id="btnsubmit">
+      <ul class="number-of-rating">
+        <li class="number"> 1 </li>
+        <li class="number"> 2 </li>
+        <li class="number"> 3 </li>
+        <li class="number"> 4 </li>
+        <li class="number"> 5 </li>
+      </ul>
+      <div id="btnsubmit" class="btnsubmit" onclick="btnClick()">
         <a href="#" id="accept"> SUBMIT </a>
       </div>
     </article>
-
   </section>
 
-  <section class="thanks-state">
+  <section id="thanks" class="thanks-state">
     <section class="content">
-    <div class="thanks-icon">
-      <img src="/images/illustration-thank-you.svg" alt="">
-    </div>
-    <div class="result-submit"> 
-      <p id="insert-number">You selected out of 5</p>  
-    </div>
-    <article>
-      <div class="title-card-state">
-        <h1> Thank you! </h1>
-        <p> We appreciate you taking the time to give a rating. If you ever need more support, 
-          don’t hesitate to get in touch! </p>
+      <div class="thanks-icon">
+        <img src="/images/illustration-thank-you.svg" alt="">
       </div>
-    </article>
-  </section>
+      <div class="result-submit"> 
+        <p>You selected <span id="rating"></span> out of 5</p>  
+      </div>
+      <article>
+        <div class="title-card-state">
+          <h1> Thank you! </h1>
+          <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch! </p>
+        </div>
+      </article>
+    </section>
   </section>
   <script src="/js/script.js"></script>
 </body>

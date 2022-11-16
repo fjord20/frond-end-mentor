@@ -1,7 +1,7 @@
 @import url(/style/reset.css);
 
 body {
-    background-color: black;
+    background-color: #000;
 }
 
 article {
@@ -11,8 +11,7 @@ article {
     height: 90%;
 }
 
-.rating-card {
-    
+#ratingcard {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,7 +19,7 @@ article {
     bottom: 0;
     margin: auto;
     padding: 2rem;
-    width: 400px;
+    max-width: 400px;
     height: 400px;
     border: none;
     border-radius: 2rem;
@@ -67,7 +66,7 @@ article {
 
 .result-submit {
     display: flex;
-    width: 50%;
+    width: 55%;
     height: 15%;
     align-items: center;
     justify-content: center;
@@ -77,6 +76,7 @@ article {
 }
 
 .result-submit p {
+    padding: 0.3rem;
     font-size: 1rem;
     color: hsl(25, 97%, 53%);
 }
@@ -94,7 +94,6 @@ article {
 
 .title-card  {
     margin-top: 2rem;
-
 }
 
 .title-card h1 {
@@ -111,13 +110,31 @@ article {
     color: hsl(217, 12%, 63%);
 }
 
-.number-of-raring {
+.number-of-rating {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
 
-.numbers {
+.title-card-state  {
+    margin-top: 2rem;
+}
+
+.title-card-state h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.title-card-state p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.number {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +152,6 @@ article {
     margin-bottom: 1rem;
     border: none;
     border-radius: 2rem;
-    
     background-color: hsl(25, 97%, 53%);
 }
 
@@ -151,10 +167,54 @@ article {
     font-weight: 700;
     letter-spacing: 0.2rem;
 }
-/*
-.numbers:hover {
+
+.number:hover {
     cursor: pointer;
     background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
-}*/
+}
 
+@media (max-width:375px) {
+    #ratingcard {
+        max-width: 90%;
+        height: 40%;
+    }
+
+    .thanks-state {
+        max-width: 90%;
+        height: 40%;
+    }
+
+    .number {
+        width: 15%;
+        height: 220%;
+    }
+
+    .icon-star {
+        max-width: 15%;
+        height: 14%;
+    }
+    
+    .title-card p {
+        font-size: 0.9rem;
+    }
+
+    .title-card {
+        margin-top: 1.8rem;
+    }
+
+    .result-submit {
+        width: 65%;
+        
+    }
+
+    .title-card-state p {
+        font-size: 0.9rem;
+    }
+
+    .result-submit p {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+        color: hsl(25, 97%, 53%);
+    }
+}
