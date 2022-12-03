@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <main>
+
+    <div class="component">
+
+      <article class="component__section">
+        <h1 class="component__title"> Learn to code by watching others </h1> 
+        <p class="component__description">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.
+        </p>
+      </article>
+
+      <div class="component_input_form">
+        <button class="component__button" type="submit" >  <p> <strong> Try it free 7 days </strong> then $20/mo. thereafter </p> </button>
+        <form action="">
+          <div class="component__input">
+            <input id="Check" type="text" placeholder="First Name">
+            <img id="img_first" src="/images/icon-error.svg" alt="">
+            <p id="first" class="first_name"> First name cannot be empty </p>
+          </div>
+          <div class="component__input">
+            <input id="Check_n" type="text" placeholder="Last Name">
+            <img id="img_last" src="/images/icon-error.svg" alt="">
+            <p id="last"  class="last_name"> Last name cannot be empty </p>
+          </div>
+          <div class="component__input">
+            <input id="email_correct"  type="text" placeholder="Email Address">
+            <img id="email_img" src="/images/icon-error.svg" alt="">
+            <p id="email_not_valid" class="email_name"> Looks like this is not an email </p>
+          </div>
+          <div class="component__input">
+            <input id="pass_empty" type="text" placeholder="Password">
+            <img id="img_pass" src="/images/icon-error.svg" alt="">
+            <p id="pass_not_empty" class="password"> Password cannot be empty </p>
+          </div>
+          <button class="component__form_button" type="button" onclick="userid_validation()"> Claim your free trial </button>
+          <p class="component__footer_text"> By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span> </p>
+        </form>
+      </div> 
+    </div>
+
+  </main>
+  <script src="/js/script.js"></script>
+</body>
+</html>
